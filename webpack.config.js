@@ -13,7 +13,7 @@ function resolve(relatedPath) {
 module.exports = {
 
   entry:{
-    index:resolve('./scripts/main.jsx')
+    index:resolve('./scripts/index.js')
   },
   output: {
     filename: "bundle.js",
@@ -52,7 +52,7 @@ module.exports = {
       filename: 'index.html',//输出文件名
       template: './index.html',//以当前目录下的index.html文件为模板生成dist/index.html文件
     }),
-    new CleanWebpackPlugin(['dist']), //传入数组,指定要删除的目录
+   /* new CleanWebpackPlugin(['dist']), //传入数组,指定要删除的目录*/
     new webpack.HotModuleReplacementPlugin()
 
 
